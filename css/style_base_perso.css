@@ -1,0 +1,24 @@
+.container{
+
+  font-family: Raleway;
+}
+
+
+
+#bio_cadre{
+
+  background-color: #ecf0f1;
+  border-style: double;
+  border-color: grey;
+  transition: box-shadow .2s;
+}
+
+#bio_cadre:hover{
+  box-shadow: 1px 1px 8px white;
+}
+
+#card_title{
+  text-align: center;
+  font-family: Raleway;
+  font-size: 30px;
+}

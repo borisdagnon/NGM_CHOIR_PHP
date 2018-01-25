@@ -1,0 +1,483 @@
+
+
+.text-input .textarea{
+line-height: normal;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    padding-left: 0;
+    border-bottom-color: rgba(0, 0, 0, 0.3);
+    background: transparent;
+    outline:none;
+    color: black;
+}
+
+.label{
+    padding: 0.7em 1.5em;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    line-height: normal;
+    border-radius: 0;
+    border: none;
+}
+
+.field .half{
+    width: calc(50% - 2em);
+    margin-right: 2em;
+}
+
+.form .field{
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5em;
+    float: left;
+}
+
+
+[id=wrapper] > * + * {
+    margin-top: calc((.75rem + 1.25vw)*2);
+}
+.has-gallery [id=wrapper], .has-gallery [id=wrapper] main, .single-format-gallery [id=wrapper], .single-format-gallery [id=wrapper] main, .page-template-gallery [id=wrapper], .page-template-gallery [id=wrapper] main {
+    padding-top: 0;
+    max-width: none;
+}
+[id=wrapper] .gallery-grid:first-child {
+    padding-top: calc((.75rem + 1.25vw)*2);
+}
+[id=wrapper] .gallery-grid:last-child {
+    padding-bottom: calc((.75rem + 1.25vw)*2);
+}
+[id=wrapper] .page-header {
+    text-align: center;
+    margin-bottom: calc((.75rem + 1.25vw)*2);
+    text-transform: uppercase;
+}
+
+@media (min-width: 1020px) {
+    [id=main] {
+        width: calc(100% - 280px + ((.75rem + 1.25vw)*-1*2));
+        margin-right: calc((.75rem + 1.25vw)*2);
+    }
+    [id=main]:only-child, .single-format-gallery [id=main], .page-template-gallery [id=main] {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+.single [id=main]:not(:only-child) + * {
+    margin-left: calc((.75rem + 1.25vw)*2);
+}
+[id=main] > * + * {
+    margin-top: calc((.75rem + 1.25vw)*3);
+}
+
+[id=sidebar] {
+    font-size: 0.75em;
+    -webkit-transition: color 0.15s 0.15s;
+    transition: color 0.15s 0.15s;
+}
+@media (min-width: 1020px) {
+    body:not(.single-format-gallery):not(.page-template-gallery) [id=sidebar] {
+        width: calc(280px);
+        margin-top: 0;
+    }
+}
+[id=sidebar] > * + * {
+    margin-top: calc((.75rem + 1.25vw)*2);
+}
+@media (min-width: 640px) and (max-width: 769px) {
+    [id=sidebar] {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    [id=sidebar] > [class*=search] {
+        width: 100%;
+    }
+    [id=sidebar] > *:not([class*=search]) {
+        width: calc((100% - 1.5rem - 3vw)/2);
+    }
+}
+[id=sidebar] h1, [id=sidebar] h2, [id=sidebar] fieldset legend, fieldset [id=sidebar] legend {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border-bottom: 2px solid;
+    padding-bottom: 0.5rem;
+}
+[id=sidebar] li {
+    display: block;
+    padding-left: calc(.75rem + 1.25vw);
+    position: relative;
+}
+[id=sidebar] li:before {
+    content: "";
+    position: absolute;
+    top: calc(.75em - 1px);
+    left: 0;
+    border-top: 2px solid;
+    width: 4px;
+}
+@media (min-width: 770px) {
+    .single-format-gallery [id=sidebar], .page-template-gallery [id=sidebar] {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+    .single-format-gallery [id=sidebar] > *[class*=search], .page-template-gallery [id=sidebar] > *[class*=search] {
+        width: 100%;
+    }
+    .single-format-gallery [id=sidebar] > *:not([class*=search]), .page-template-gallery [id=sidebar] > *:not([class*=search]) {
+        width: calc((100% - (.75rem + 1.25vw)*8) / 4);
+    }
+    .single-format-gallery [id=sidebar] > *, .page-template-gallery [id=sidebar] > * {
+        margin: calc(.75rem + 1.25vw);
+    }
+}
+[id=sidebar].background--dark, [id=sidebar].background--complex, .background--dark [id=sidebar] {
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+[id=sidebar].background--dark > *:hover, [id=sidebar].background--complex > *:hover, .background--dark [id=sidebar] > *:hover {
+    color: black;
+    text-shadow: none;
+}
+
+[id=footer] {
+    text-align: center;
+    position: relative;
+}
+[id=footer] .container {
+    padding: calc((.75rem + 1.25vw)*2) 0;
+    min-height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+[id=footer] .container:after {
+    left: auto;
+    right: calc(.75rem + 1.25vw);
+}
+[id=footer] .container > * {
+    display: block;
+}
+[id=footer] .container > * + * {
+    margin-top: calc(.75rem + 1.25vw);
+}
+[id=footer] .footer-title {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+[id=footer] .footer-entry {
+    text-transform: uppercase;
+    font-size: 0.75em;
+}
+[id=footer] .container {
+    overflow: hidden;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+[id=footer] .container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("images/ui/target.svg") no-repeat left top, url("images/ui/target.svg") no-repeat right top, url("images/ui/target.svg") no-repeat left bottom, url("images/ui/target.svg") no-repeat right bottom;
+    margin: 0 -16px -16px;
+    z-index: -1;
+}
+.custom-background [id=footer] {
+    height: 100vh;
+    overflow: visible;
+}
+.custom-background [id=footer] .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.custom-background [id=footer] .container:before {
+    margin: calc(.75rem + 1.25vw);
+    background-image: url("http://dev.mobilemarkup.com/calibration/wp-content/themes/calibration/assets/images/ui/target-background.svg");
+    background-size: contain;
+    background-position: center;
+}
+.custom-background [id=footer] .container > *:first-child {
+    margin-top: auto !important;
+}
+[id=footer].background--dark, .background--dark [id=footer] {
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.form .text-input, .form .textarea, .form .label, .form .button {
+    padding: 1em 1.5em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    line-height: normal;
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+
+.form .text-input, .form .textarea {
+    font: inherit;
+    line-height: normal;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    padding-left: 0;
+    border-bottom-color: rgba(0, 0, 0, 0.3);
+    background: transparent;
+    outline: none;
+    color: black;
+}
+.form .text-input:placeholder, .form .textarea:placeholder {
+    color: rgba(0, 0, 0, 0.7);
+}
+.form .text-input:-webkit-autofill, .form .textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    box-shadow: 0 0 0px 1000px white inset;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: white;
+}
+.form .error.text-input, .form .error.textarea, .error .form .text-input, .form .error .text-input, .error .form .textarea, .form .error .textarea {
+    border-color: transparent transparent red transparent;
+}
+.form:not(.has-floated-label) .text-input:active, .form:not(.has-floated-label) .textarea:active, .form:not(.has-floated-label) .text-input:focus, .form:not(.has-floated-label) .textarea:focus {
+    border-color: transparent transparent black transparent;
+}
+
+.form .label {
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+    padding-left: 0;
+}
+
+.form .label {
+    top: 0;
+    left: 0;
+    color: rgba(0, 0, 0, 0.7);
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+.active .form .label, .form .active .label {
+    font-size: 0.75em;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.7);
+    background: white;
+}
+.focus .form .label, .form .focus .label {
+    color: black;
+}
+
+.form.has-floated-label .field:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 1px solid black;
+    -webkit-transition: width 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: width 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.form.has-floated-label .field.focus:after {
+    width: 100%;
+}
+
+.form .button {
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    font: inherit;
+    line-height: normal;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1428571429em;
+}
+.form .button:hover, .form .button:focus, .form .button:active {
+    color: white;
+    background: black;
+}
+.form .button:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+.form {
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 1em 2em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.form .field {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5em;
+    float: left;
+}
+@media screen and (min-width: 40em) {
+    .form .field.half {
+        width: calc(50% - 2em);
+        margin-right: 2em;
+    }
+    .form .field.half + .half {
+        margin-left: 2em;
+        margin-right: 0;
+    }
+}
+.form .field:last-child {
+    float: right;
+    width: auto;
+}
+.form .textarea {
+    max-width: 100%;
+}
+
+svg path {
+    fill: black;
+}
+
+.categ_container{
+
+    display: block;
+    width: 35%;
+    padding: -3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-top: outset;
+    border-bottom: outset;
+    border-right: outset;
+    border-top-right-radius: 14px;
+    color: #9a1616;
+    background-color: #16499a ;
+}
+
+.categ{
+
+    display: block;
+    width: 98%;
+   /* border-top: double;
+    border-bottom: double;
+    border-right: double;*/
+    border-top: solid;
+    border-bottom: solid;
+    border-right: solid;
+    padding: 10px;
+margin-top:3px;
+    margin-bottom:3px;
+    border-top-right-radius: 14px;
+    background-color: white ;
+
+    text-align: center;
+    color: #9a1616;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* Customize the label (the container) */
+.container_box {
+    display: block;
+    width: 130px;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container_box input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container_box:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container_box input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container_box input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container_box .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
